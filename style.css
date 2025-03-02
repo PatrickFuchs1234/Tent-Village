@@ -129,6 +129,7 @@ p a:hover {
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
+.bg-white     { background-color: white;}
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -163,7 +164,6 @@ p a:hover {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
-
 
 .bg-overlay > * {
   z-index: 2;
@@ -301,9 +301,14 @@ nav a:hover {
 
 /* -------------------- Page Name  ------------------------------------- */
 
+/* homepage - testemonial */
 
-
-
+.icon{
+  color: var(--featured-text);
+  font-size: 6rem;
+  opacity: 80%;
+  margin-bottom: -2rem;
+}
 
 
 
