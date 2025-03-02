@@ -384,6 +384,10 @@ nav a:hover {
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+/* Frame Utility Classes */ 
+.frame-tb {border-top: 1px solid var(--dark); border-bottom: 1px solid var(--dark);}
+.frame-r {border-right: 1px solid var(--dark);}
+
 
 /* ------------------------ Responsive Styles -------------------------- */
 
