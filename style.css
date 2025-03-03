@@ -333,6 +333,7 @@ form .button2 {
 /* footer styles */
 
 .social-icons{
+  color: var(--dark);
   border-bottom: none;
   font-size: 1.6rem;
   padding-left: 1rem;
