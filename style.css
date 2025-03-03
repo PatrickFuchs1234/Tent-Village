@@ -112,6 +112,7 @@ p a:hover {
     line-height: 1;
     padding: 0.5rem 1.5rem;
     border: 1px solid;
+    border-radius: 5px;
 }
 
 .button:hover {
@@ -121,6 +122,17 @@ p a:hover {
 .subtle-button {
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+.link-back{
+  font-family: 'Antonio', serif;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+link-back:hover {
+  color: var(--featured-text); 
+  cursor: pointer;
 }
 
 /* suggested additional styles 
@@ -222,6 +234,8 @@ form label {
 }
 
 form .button2 {
+  font-family: inherit;
+  font-size: inherit;
   background-color: var(--v-light);
   color: var(--featured);
   border: 2px solid var(--featured);
@@ -229,21 +243,69 @@ form .button2 {
   letter-spacing: 0.1em;
   margin-top: 1rem;
   font-weight: bold;
+  cursor: pointer;
 } 
 
-/* --------------------- Blogging elements  ---------------------------- */
+/* ------------ Markdown Styles -------------  */
 
-/* Post Loop Item  */
+.md-style h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-transform: none;
+}
 
-/* Individual Elements */
+/* nicht verändern */
+.md-style h2 {
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
 
-/* Individual Blog Post Pages  */
+/* nicht verändern */
+.md-style h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: none;
+}
 
-/* Sidebar */
+/* nicht verändern */
+.md-style h4 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  text-transform: none;
+}
 
-/* Social Share Nav  */
+/* für listen */
+.md-style h5 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
 
-/* Miscelaneous elements  */
+.md-style h6 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-transform: none;
+}
+
+.md-style p {
+  line-height: 1.6;
+}
+
+.md-style hr {
+  margin: 5% 0;
+  border: none;
+  border: 1px solid #595946;
+}
+
+.md-style li{
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-right: 5rem;
+}
 
 
 /* -------------------- Page Name  ------------------------------------- */
@@ -283,6 +345,12 @@ form .button2 {
   margin-top: -25px; */
 }
 
+.copyright { 
+  opacity: 0.8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: inherit;
+}
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
 
@@ -338,6 +406,8 @@ form .button2 {
 .padded-b-0 { padding-bottom: 0; }
 .padded-l-0 { padding-left: 0; }
 .padded-r-0 { padding-right: 0; }
+
+.padded-tb-0  { padding-top: 0%; padding-bottom: 0%; }
 
 /* Margin Utility Classes */ 
 
