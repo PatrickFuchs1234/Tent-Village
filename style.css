@@ -212,6 +212,7 @@ form textarea {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 2px solid var(--featured);
+  border-radius: 5px;
   outline: none;
   font-family: inherit;
   font-size: 0.9rem;
@@ -239,6 +240,7 @@ form .button2 {
   background-color: var(--v-light);
   color: var(--featured);
   border: 2px solid var(--featured);
+  border-radius: 5px;
   padding: 0.5rem 2rem;
   letter-spacing: 0.1em;
   margin-top: 1rem;
@@ -487,14 +489,18 @@ form .button2 {
 
   .sm-padded     { padding: 5%; }
   .sm-padded-lg     { padding: 10%; }
+  .sm-padded-xl     { padding: 15%; }
   .sm-padded-tb-lg     { padding-top: 10%; padding-bottom: 10%;}
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
 
   .sm-padded-t-0 { padding-top: 0; }
   .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-b-lg{ padding-bottom: 10%; }
+
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-b { margin-bottom: 5%; }
 
   .sm-landscape     { padding-bottom: 50% ; 
                       background-size: cover;
