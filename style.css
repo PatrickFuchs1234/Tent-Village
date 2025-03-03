@@ -188,106 +188,48 @@ p a:hover {
 
 
 /* ------------------ Header & Hamburger Menu ---------------------- */
-header {
-    padding: 1rem 5%;
-}
-
-nav a {
-    padding: 0.25rem 0.5rem;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-nav a:hover {
-  color: var(--featured-text);
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 2.5rem;
-} 
-
-
-/* Dropdown styles */
-
-.dropdown { 
-  position: relative; 
-  display: inline-block;
-  border: 1px solid orange;
-}
-
-.dropdown-title {
-  padding: 0.25rem 0.5rem;
-  display: inline-block;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: -1rem;
-  padding: 0.5rem;
-  display:none; 
-  background-color: white;
-  z-index: 2;
-  text-align: left;
-  min-width: 10rem;
-  border: 1px solid mediumvioletred;
-}
-
-.dropdown:hover .dropdown-content{ 
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 0.2rem;
-}
-
-.hamburger-button {
-    cursor: pointer;
-    padding: 0.5rem;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 2.5rem;
-    line-height: 0.8;
-    position: fixed;
-    right: 5%;
-    top: 0rem;
-    z-index: 4;
-  }
-  
-  /* Styles when the hamburger button is active  */
-  .hamburger-button.active {
-    color: white;
-  }
-  
-  
-  .mobile-menu {
-    display: none; 
-    background-color: var(--featured);
-    padding: 5%;
-    position: fixed; 
-    z-index:3;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  
-  .mobile-menu a {
-    text-decoration: none; 
-    color: inherit; 
-    padding: 2%;
-    display: block;
-    font-weight: normal;
-  }
 
 
 
 /* ------------------------- Contact Forms  --------------------------- */
 
+/* --------- contact form ---------- */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid var(--featured);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
 
+form input:focus,
+form textarea:focus {
+  border-color: var(--medium);
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: var(--featured);
+  font-weight: bold;
+}
+
+form .button2 {
+  background-color: var(--v-light);
+  color: var(--featured);
+  border: 2px solid var(--featured);
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin-top: 1rem;
+  font-weight: bold;
+} 
 
 /* --------------------- Blogging elements  ---------------------------- */
 
@@ -380,6 +322,7 @@ nav a:hover {
 
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
 .padded-lr  { padding-left: 5%; padding-right: 5%; }
+.padded-lr-10  { padding-left: 10%; padding-right: 10%; }
 
 .padded-t-1 { padding-top: 1rem; }
 .padded-b-1 { padding-bottom: 1rem; }
