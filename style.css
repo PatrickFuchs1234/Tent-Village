@@ -17,12 +17,12 @@ section { position: relative; }
 /* ------------------------ CSS Variables ------------------------------- */
 :root {
   --dark: #112c36;
-  --featured: lightblue;
-  --medium: rgb(70, 178, 236);
-  --light: #c8e8f4;
-  --v-light: #ebfafe;
-  --light-text: #fff;
-  --featured-text: lightblue;
+  --featured: #a58862;
+  --medium: #d0c1ad;
+  --light: #ede7df;
+  --v-light: #fbfaf8;
+  --light-text: #fbfaf8;
+  --featured-text: #a58862;
 }
 
 /* ---------------------- Typography Styles ----------------------------- */
@@ -43,15 +43,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1.4rem; }
-h6 { font-size: 1.2rem; }
+h1 {  font-size: 6.5rem; }
+h2 {  font-size: 4rem;
+      font-weight: 300; }
+h3 {  font-size: 2.6rem; 
+      font-weight: 300; }
+h4 {  font-size: 1.5rem;
+      font-weight: 200; }
+h5 {  font-size: 0.8rem; 
+      font-weight: 200; }
+h6 {  font-size: 1.2rem;
+      font-weight: 200; }
 
 p, li {
-  line-height: 1.4; 
+  line-height: 1.5; 
   margin-bottom: 1rem;
   font-family: 'Roboto', serif; 
   font-weight: 200;
@@ -129,7 +134,7 @@ p a:hover {
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
-.bg-white     { background-color: white;}
+.bg-white     { background-color: var(--v-light);}
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -303,13 +308,38 @@ nav a:hover {
 
 /* homepage - testemonial */
 
+.img-testemonial{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
 .icon{
   color: var(--featured-text);
   font-size: 6rem;
   opacity: 80%;
+  margin-top: -1rem;
   margin-bottom: -2rem;
 }
 
+/* footer styles */
+
+.social-icons{
+  border-bottom: none;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  margin: 0.5rem;
+}
+
+.img-logo{
+  /* width: 172px; */
+  height: 150px;
+  /* object-fit: cover;
+  object-position: 50% 50%;
+  margin-top: -25px; */
+}
 
 
 /* --------------- Negative Space Utility Classes  ---------------------- */ 
@@ -326,6 +356,12 @@ nav a:hover {
 .vh70  { min-height: 70vh; }
 .vh60  { min-height: 60vh; }
 .vh50  { min-height: 50vh; }
+.vh40  { min-height: 40vh; }
+.vh35  { min-height: 35vh; }
+.vh30  { min-height: 30vh; }
+.vh25  { min-height: 25vh; }
+.vh20  { min-height: 20vh; }
+
 
 /* Padding Utility Classes */ 
 .padded-sm { padding: 2.5%; }
@@ -337,6 +373,7 @@ nav a:hover {
 .padded-2  { padding: 2rem; }
 
 .padded-t  { padding-top: 5%; }
+.padded-t-6{padding-top: 6%;}
 .padded-b  { padding-bottom: 5%; }
 .padded-l  { padding-left: 5%; }
 .padded-r  { padding-right: 5%; }
@@ -389,10 +426,13 @@ nav a:hover {
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+.margin-b-neg {margin-bottom: -3rem;}
+
 /* Frame Utility Classes */ 
 .frame-tb {border-top: 1px solid var(--dark); border-bottom: 1px solid var(--dark);}
 .frame-r {border-right: 1px solid var(--dark);}
-
+.frame-lr-100 {border-left: 1px solid var(--dark); height: 100px;
+               border-right: 1px solid var(--dark); height: 100px;}
 
 /* ------------------------ Responsive Styles -------------------------- */
 
@@ -433,6 +473,8 @@ nav a:hover {
   .sm-text-right  { text-align: right; }
 
   .sm-padded     { padding: 5%; }
+  .sm-padded-lg     { padding: 10%; }
+  .sm-padded-tb-lg     { padding-top: 10%; padding-bottom: 10%;}
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
 
@@ -441,11 +483,28 @@ nav a:hover {
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
 
-  .sm-landscape     { padding-bottom: 66% ; }
+  .sm-landscape     { padding-bottom: 50% ; 
+                      background-size: cover;
+                      background-position: 50% 62%; }
   .sm-portrait-tall { padding-bottom: 175%; }
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
+  .sm-center {text-align: center;}
+
+  .sm-border-t{   
+    border-top: 1px solid var(--dark);  }
+  .sm-frame-l-100{
+    border-left: 1px solid var(--dark); height: 100px;
+    border-right: none}
+  .sm-frame-n {border: none;}
+
+  h1{font-size: 4.8rem;}
+  h2{font-size: 3rem;}
+
+  .sm-flex-flip-alternate {
+    flex-direction: row-reverse;
+  }
 }
 
 /* ---------------- XS Media Query (36em / 576px) ------------------- */ 
@@ -460,4 +519,6 @@ nav a:hover {
       font-weight: 300;
       font-family: 'Martel', serif; 
     }
+
+    h1{font-size: 4rem;}
 }
